@@ -1,0 +1,124 @@
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    background-color:rgb(232, 218, 177);
+}
+#everything {
+    margin-top: 100px;
+    margin-bottom: 80px;
+    margin-right: 80px;
+    margin-left: 210px;
+}
+/* #line {
+    margin-bottom: 50px;
+} */
+
+#titleHeader {
+    text-align: center;
+    margin: 70px;
+    font-size: 33px;  
+    margin-bottom: 100px;
+    font-family: 'Pacifico', cursive; /* A rounded, bubble-like font */
+    color: white;
+    text-shadow: 
+        2px 2px 4px rgba(0, 0, 0, 0.3),  /* Subtle shadow for depth */
+        -2px -2px 2px rgba(255, 255, 255, 0.5); /* Light shadow to enhance bubble effect */
+    letter-spacing: 0.05em;
+    animation: slideIn 3s ease-in-out, bounce 2s ease-in-out infinite;
+}
+
+/* Slide-in animation */
+@keyframes slideIn {
+    from { transform: translateX(-100%); }
+    to { transform: translateX(0); }
+}
+
+/* Bounce animation */
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+
+#subtext {
+    text-align: center; /* Aligns the text within the element to the right */
+    color: white;
+    font-size: 18px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    line-height: 1.5;
+    width: 60%;
+    margin: -60px auto 10px auto; /* Centers the element horizontally */
+    
+}
+
+
+#form {
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+#picture {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+}
+#picture img {
+    width: 100%;
+    height: 100%;
+    overflow: none;
+}
+#checkbox {
+    width: 20px;
+}
+#submitForm {
+    margin: 3% auto 0 auto; /* Adds space above the element */
+    display: block;
+    border: none;
+    padding: 20px;
+    font-size: 15px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+.question {
+    text-align: center;
+    margin-top: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+.dropDown {
+    padding-left: 30px;
+    font-size: 13px;
+}
+
+.questionText {
+    color: white;
+    text-align: center;
+    font-size: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 20px;
+}
+
+.answerButton {
+    display: block;
+    width: 80%;
+    margin: 10px auto;
+    padding: 15px;
+    font-size: 16px;
+    text-align: center;
+    color: white;
+    background-color: #333; /* Dark background to contrast with white text */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.answerButton:hover {
+    background-color: #555; /* Slightly lighter color on hover */
+}
